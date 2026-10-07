@@ -1,0 +1,109 @@
+:root {
+  --navy: #083a4f;
+  --gold: #a58d66;
+  --aqua: #c0d5d6;
+  --teal: #407e8c;
+  --sand: #e5e1dd;
+  --text-light: var(--sand);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--text-light);
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+
+  /* CARA TERPASTI: Menggabungkan Navy dan Motif dalam satu tumpukan */
+  background-image:
+    linear-gradient(rgba(8, 58, 79, 0.85), rgba(8, 58, 79, 0.85)),
+    url("/static/img/motif-islami.png");
+
+  background-color: var(--navy); /* Fallback jika gambar gagal load */
+  background-size: 1000px;
+  background-position: center;
+  background-attachment: fixed; /* Motif tetap diam saat scroll, sangat mewah */
+  background-repeat: repeat-x;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: rgba(8, 58, 79, 0.9); /* Transparan */
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--gold);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-family: "Cinzel", serif;
+  color: var(--gold);
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+/* Hero Section - DIBUAT SEMI-TRANSPARAN */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 8%;
+  min-height: 85vh;
+  /* Kita buat gradasi Hero sangat tipis agar motif di body terlihat tembus */
+  background: linear-gradient(
+    135deg,
+    rgba(8, 58, 79, 0.4) 0%,
+    rgba(64, 126, 140, 0.3) 100%
+  );
+}
+
+.hero-text h1 {
+  font-family: "Cinzel", serif;
+  font-size: 3.8rem;
+  color: var(--gold);
+  line-height: 1.1;
+  margin-bottom: 25px;
+}
+
+.img-placeholder {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.btn-gold {
+  background: var(--gold);
+  color: var(--navy);
+  padding: 15px 35px;
+  border: none;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 30px;
+  padding: 60px 8%;
+  /* Gunakan semi-transparan jika ingin motif tembus ke bawah */
+  background: rgba(229, 225, 221, 0.95);
+}
+
+.card {
+  background: white;
+  border: 1px solid var(--aqua);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  transition: 0.3s;
+  color: var(--navy);
+}

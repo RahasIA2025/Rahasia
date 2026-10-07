@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>QURBAKALA - Toko Kitab Klasik</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">QURBAKALA</div>
+      <nav>
+        <a
+          href="/"
+          style="color: var(--sand); text-decoration: none; margin-left: 25px"
+          >SHOP</a
+        >
+        <a
+          href="#"
+          style="color: var(--sand); text-decoration: none; margin-left: 25px"
+          >LEARN</a
+        >
+        <a
+          href="#katalog"
+          style="color: var(--sand); text-decoration: none; margin-left: 25px"
+          >CONTACT</a
+        >
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-text" style="flex: 1.2">
+        <h1>Literary Escapes,<br />Endless Journeys</h1>
+        <p
+          style="
+            margin: 25px 0;
+            color: var(--aqua);
+            font-size: 1.1rem;
+            max-width: 500px;
+          "
+        >
+          Temukan mutiara ilmu dari para ulama terdahulu melalui koleksi kitab
+          kuning dan Al-Qur'an eksklusif kami.
+        </p>
+        <button class="btn-gold">SHOP NOW</button>
+      </div>
+
+      <div class="img-placeholder" style="flex: 1; height: 500px; border: none">
+        <img
+          src="/static/img/buku1.png"
+          alt="BUKU UTAMA"
+          style="max-height: 100%; max-width: 100%; object-fit: contain"
+        />
+      </div>
+    </section>
+
+    <div
+      style="
+        background: rgba(229, 225, 221, 0.92);
+        backdrop-filter: blur(5px);
+        padding: 40px 0;
+      "
+    >
+      <h2
+        style="
+          text-align: center;
+          color: var(--navy);
+          font-family: &quot;Cinzel&quot;, serif;
+          font-size: 2.5rem;
+        "
+      >
+        Our Products
+      </h2>
+      <p style="text-align: center; color: var(--teal); margin-bottom: 40px">
+        Koleksi Kitab Kuning & Al-Qur'an Unggulan
+      </p>
+
+      <div id="katalog" class="product-grid">
+        <div class="card">
+          <div class="img-placeholder img-box">
+            <p style="color: var(--gold)">[FOTO PRODUK 1]</p>
+          </div>
+          <h3 style="font-family: &quot;Cinzel&quot;, serif">Fathul Qorib</h3>
+          <p style="color: var(--teal); font-weight: bold; margin: 10px 0">
+            Rp 65.000
+          </p>
+          <button
+            class="btn-gold"
+            style="width: 100%"
+            onclick="location.href = '/detail'"
+          >
+            SHOP NOW ↗
+          </button>
+        </div>
+
+        <div class="card">
+          <div class="img-placeholder img-box">
+            <p style="color: var(--gold)">[FOTO PRODUK 2]</p>
+          </div>
+          <h3 style="font-family: &quot;Cinzel&quot;, serif">
+            Tafsir Jalalain
+          </h3>
+          <p style="color: var(--teal); font-weight: bold; margin: 10px 0">
+            Rp 150.000
+          </p>
+          <button
+            class="btn-gold"
+            style="width: 100%"
+            onclick="location.href = '/detail'"
+          >
+            SHOP NOW ↗
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
